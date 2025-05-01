@@ -4,10 +4,10 @@ namespace FibonacciNumbers
 {
     class Program
     {
-        // Recursive method to calculate the nth Fibonacci number
+        //Method to calculate the nth Fibonacci number
         static int GetFibonacciNumber(int n)
         {
-            // Base cases: F_0 = 0 and F_1 = 1
+            //Base cases
             if (n == 0)
             {
                 return 0;
@@ -16,7 +16,7 @@ namespace FibonacciNumbers
             {
                 return 1;
             }
-            // Recursive step: F_n = F_{n-1} + F_{n-2}
+            //Recure
             else
             {
                 return GetFibonacciNumber(n - 1) + GetFibonacciNumber(n - 2);
