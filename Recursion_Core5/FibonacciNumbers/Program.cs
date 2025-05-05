@@ -22,13 +22,14 @@ namespace FibonacciNumbers
                 return GetFibonacciNumber(n - 1) + GetFibonacciNumber(n - 2);
             }
         }
-
+        //Method to display example
         static void Main(string[] args)
         {
             Console.WriteLine("The first 10 Fibonacci numbers are:");
             for (int i = 0; i < 10; i++)
             {
                 int fibonacciNumber = GetFibonacciNumber(i);
+                //Current Value
                 Console.WriteLine($"F_{i} = {fibonacciNumber}");
             }
         }

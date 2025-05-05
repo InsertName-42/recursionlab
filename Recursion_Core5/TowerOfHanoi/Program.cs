@@ -19,7 +19,7 @@ namespace TowerOfHanoi
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Tower of Hanoi Puzzle Solver!");
+            Console.WriteLine("Tower of Hanoi Puzzle Solver");
             Console.Write("Select number of discs: ");
 
             if (int.TryParse(Console.ReadLine(), out int numberOfDiscs) && numberOfDiscs > 0)
