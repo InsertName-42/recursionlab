@@ -18,7 +18,7 @@ namespace Palindromes
             {
                 return false;
             }
-            //Check if excluding the first and last characters is a palindrome
+            //Check if excluding the first and last characters creates a palindrome
             return IsPalindromeRecursive(s.Substring(1, s.Length - 2));
         }
 
@@ -32,7 +32,7 @@ namespace Palindromes
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter a word or phrase:");
+            Console.WriteLine("Enter text to be tested:");
             string userInput = Console.ReadLine();
 
             //Process input
