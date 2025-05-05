@@ -4,27 +4,28 @@ namespace TriangularNumbers
 {
     class Program
     {
-        // Recursive method to calculate the nth triangular number
+        //Method to calculate the nth triangular number
         static int GetTriangularNumber(int n)
         {
-            // Base case: The 1st triangular number is 1
+            //Base case
             if (n == 1)
             {
                 return 1;
             }
-            // Non-base case: The nth triangular number is n plus the (n-1)th triangular number
+            //Recur
             else
             {
                 return n + GetTriangularNumber(n - 1);
             }
         }
-
+        //Display Example
         static void Main(string[] args)
         {
-            Console.WriteLine("The first 10 triangular numbers are:");
+            Console.WriteLine("The first 10 triangular numbers:");
             for (int i = 1; i <= 10; i++)
             {
                 int triangularNumber = GetTriangularNumber(i);
+                //Current number
                 Console.WriteLine($"T_{i} = {triangularNumber}");
             }
         }
